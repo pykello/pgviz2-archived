@@ -26,7 +26,7 @@ class ViewTestMain extends FunSuite {
     val ui = new TestUI(v)
     ui.visible = true
     while (ui.visible) {
-      // busy loop
+      Thread.sleep(500)
     }
   }
 
